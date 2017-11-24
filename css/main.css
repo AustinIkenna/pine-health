@@ -1,0 +1,437 @@
+
+@font-face {
+	font-family: 'SourceSansPro';
+	src: url('source-sans-pro/SourceSansPro-Regular.ttf') format("truetype"),
+			url('source-sans-pro/SourceSansPro-Regular.woff') format("WOFF");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SourceSansPro';
+	src: url('source-sans-pro/SourceSansPro-Bold.ttf') format("truetype"),
+			url('source-sans-pro/SourceSansPro-Bold.woff') format("WOFF");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SourceSansPro';
+	src: url('source-sans-pro/SourceSansPro-Italic.ttf') format("truetype"),
+			url('source-sans-pro/SourceSansPro-Italic.woff') format("WOFF");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'SourceSansPro';
+	src: url('source-sans-pro/SourceSansPro-Black.ttf') format("truetype"),
+			url('source-sans-pro/SourceSansPro-Black.woff') format("WOFF");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SourceSansPro';
+	src: url('source-sans-pro/SourceSansPro-BlackItalic.ttf') format("truetype"),
+			url('source-sans-pro/SourceSansPro-BlackItalic.woff') format("WOFF");
+	font-weight: 900;
+	font-style: italic;
+}
+
+body {
+	font-size: 100%;
+    color: rgb(117, 117, 117);
+    min-width: 320px !important;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+a, p {
+	font-family: 'SourceSansPro-Regular';
+}
+h1 {
+	font-family: 'SourceSansPro-Black';
+	color: #000;
+	font-size: 380%;
+}
+h2, h3, h4, h5, h6 {
+	font-family: 'SourceSansPro-Bold';
+}
+header {
+    padding: 0;
+    margin: 0;
+    word-spacing: 2px;
+	margin-bottom: 5.5%;
+}
+button  {
+	border: 0.1em solid;
+	border-radius: 0.3em;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+/* BUTTON STYLING */
+.getQuoteButton1,
+.getQuoteButton2  { 
+	top: 22%;
+	height: 3em;
+	font-size: 80%; 
+	color: #1a237e;
+	width: 10em;
+}
+.aboveFooterButton1,
+.aboveFooterButton2 { 
+	font-size: 85%; 
+	height: 2.8em;
+	color: #1a237e;
+	width: 10em;
+	margin: 2.5% 0.5% 0 0.5%;
+}
+.getQuoteButton1:hover {
+    color: #1a237e;
+    border: 0.1em solid #1a237e;
+    background-color: #fff;
+}
+.getQuoteButton2:hover {
+    color: #000;
+    border: 0.1em solid #000;
+    background-color: #fff;
+}
+.aboveFooterButton1:hover,
+.aboveFooterButton2:hover { 
+	color: #1a237e; 
+	border: 0.1em solid #1a237e;
+	background-color: #fff;
+}
+input {
+	font-size: medium;
+	border: none;
+	padding-bottom: 1%;
+	background: transparent;
+}
+input:focus {
+  outline: none;
+}
+.subscribeBox img {
+	cursor: pointer;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.subscribeBox {
+	border-bottom: 1px solid rgb(224, 224, 224);
+	width: 60%;
+}
+.subscribeBox:focus {
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+/* END OF BUTTON STYLING */
+
+/* NAVIGATION STYLING */
+a {
+ 	color: gray;
+ 	text-decoration: none;
+}
+nav a {
+	padding-left: 1.5em;
+}
+a:hover {
+ 	color: #000;
+}
+/*Current page decoration*/
+#secondHeader a {
+	padding: 0 0.6em 1.2em 0.6em;
+}
+.mainMenu a.currentPage {
+	color: #000;
+}
+.subMenu a.currentPage  {
+ 	color: #1a237e;
+	border-bottom: 0.2em solid #1a237e;
+}
+.subMenu a.currentPage2  {
+ 	color: #000000;
+	border-bottom: 0.2em solid #000000;
+}
+/* END OF NAVIGATION STYLING */
+
+/* LOGO STYLING */
+.logo {
+	padding-top: 0.6em;
+	font-size: 23px;
+	padding-left: 8%;
+	float: left;
+}
+.logo {
+	clear: left;
+}
+.logo img {
+	height: 1.5em;
+}
+#secondHeader .logo {
+	margin-top: 0.6em;
+	margin-left: 7%;
+	display: none;
+}
+/* END OF LOGO STYLING */
+
+/* HEADER STYLING */
+#homeHeader,
+#firstHeader {
+	top: 0;
+	width: 100%;
+	height: 3em;
+	border-bottom: 0.5px solid rgb(224, 224, 224);
+	display: inline-block;
+	padding-bottom: 1%;
+	background-color: white;
+    position: fixed;
+	z-index: 3;
+}
+#homeHeader,
+#firstHeader {
+	clear: right;
+}
+#homeHeader nav,
+#firstHeader nav  {
+	padding-top: 1.3em;
+	padding-left: 15%;
+}
+#secondHeader {
+	top: 9.6%;
+	width: 100%;
+	height: 3em;
+	display: inline-block;
+	padding-bottom: 1%;
+	background-color: white;
+	border-bottom: 0.5px solid rgb(224, 224, 224);
+    position: fixed;
+	z-index: 2;
+}
+#secondHeader {
+	clear: right;
+}
+#secondHeader nav  {
+	padding-top: 1.3em;
+	padding-left: 17%;
+}
+#flashBanner { /* Styling of notification banner created using JQuery */
+} 
+/* END OF HEADER STYLING */
+
+/* CONTENT AREA STYLING */
+#topGap {
+	padding-top: 3.5em;
+}
+#pageContent {
+	padding: 1% 8%;
+	margin-bottom: 10%;
+	z-index: 0;
+}
+#pageContent nav {
+	text-align: right;
+}
+#pageContent img {
+	position: relative;
+	border-radius: 0.2em;
+}
+#pageContent .aa {
+	margin-top: 2%;
+	padding: 0 2.5%;
+	font-size: 1em;
+}
+#pageContent {
+	clear: left;
+}
+.aboveFooter {
+	border-top: 0.1px solid rgb(224, 224, 224);
+	width: 84%;
+	height: 10em;
+	line-height: 0;
+	margin: 1% 8%;
+	padding: 5% 0 2% 0;
+}
+.aboveFooter {
+	clear: left;
+}
+.aboveFooter p {
+	font-size: 140%;
+}
+.aboveFooter h1 {
+	color: #000;
+	font-size: 250%;
+	margin-right: 10%;
+}
+/* END OF CONTENT AREA STYLING */
+
+/* FOOTER AREA STYLING */
+.firstFooter {
+	border-top: 0.1px solid rgb(224, 224, 224);
+	width: 90%;
+	font-size: 0.9em;
+	padding: 1.5% 0 4% 8%;
+	margin-bottom: 20%;
+	line-height: 0.8em;
+}
+.firstFooter {
+	clear: left;
+}
+.secondFooter {
+	margin: 0 8%;
+    padding: 1.3% 0;
+    font-size: medium;
+}
+.thirdFooter  {
+	border-top: 0.1px solid rgb(224, 224, 224);
+	margin: 0 8%;
+    padding: 1.3% 0;
+	font-size: small;
+}
+.thirdFooter {
+	clear: both;
+}
+.thirdFooter nav {
+	word-spacing: 2px;
+}
+.socialIcons { /* Social media icons styling*/
+    height: 30px;
+    display: inline-block;
+    background: url('../images/social-icons3.png') no-repeat;
+}
+a.facebook {background-position: 0 -30px;
+}
+a.facebook:hover {background-position: 0 0px;
+}
+a.twitter {background-position: 0 -90px;
+}
+a.twitter:hover {background-position: 0 -60px;
+}
+a.instagram {background-position: 0 -150px;
+}
+a.instagram:hover {background-position: 0 -120px;
+}
+/* END OF FOOTER AREA STYLING */
+
+/* RESUABLE CLASSES FOR STYLING */
+.rightPosition {
+	margin-right: 8%;
+    position: absolute;
+    right: 0.8%;
+}
+/* Content positioning */
+.col-50 {
+	width: 50%;
+	float: left;
+}
+.col-45 {
+	width: 45%;
+	float: left;
+}
+.col-38 {
+	width: 38%;
+	float: left;
+}
+.col-25 {
+	width: 25%;
+	float: left
+}
+.col-20 {
+	width: 20%;
+	float: left;
+}
+.col-15 {
+	width: 15%;
+	float: left;
+}
+/* Image sizing */
+.img-100 {
+	height: auto;
+	width: 100%;
+}
+.img-75 {
+	height: auto;
+	width: 75%;
+}
+.img-50 {
+	height: auto;
+	width: 50%;
+}
+.img-30 {
+	height: auto;
+	width: 30%;
+}
+.img-25 {
+	height: auto;
+	width: 25%;
+}
+/* Styling for page header */
+.headingCentered {
+	padding: 0 16%;
+	text-align: center;
+	line-height: 1em;
+	letter-spacing: -0.01em;
+}
+.headingCentered2 {
+	padding: 0 10%;
+	text-align: center;
+	line-height: 1em;
+	letter-spacing: -0.01em;
+}
+.headingCentered3 {
+	font-size: 300%;
+	padding: 0 1.8%;
+	margin: 10% 2%;
+	line-height: 1em;
+	letter-spacing: -0.01em;
+}
+.mediumHeading {
+	font-size: 140%;
+	line-height: 1.3em;
+	letter-spacing: 0.02em;
+}
+.mediumHeading2 {
+	margin-top: 10%;
+	color: #000000;
+	font-size: 130%;
+	font-weight: lighter;
+	line-height: 1.4em;
+	letter-spacing: 0.02em;
+}
+/* Content positioning */
+.centeredContent {
+	text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.leftContent{
+	text-align: left;
+}
+.rightContent{
+	text-align: right;
+}
+/* Background styling for buttons */
+.bgColorWhite {  
+	color: #1a237e;
+	border-color: rgb(224, 224, 224);
+	background-color: #fff;
+}
+.bgColorBlue {  
+	color: #b3e5fc;
+	border-color: #1a237e;
+	background-color: #1a237e;
+}
+.bgColorOrange {  
+	color: #fff;
+	border-color: #FF6600;
+	background-color: #FF6600;
+}
+.bgColorBlack {  
+	color: #fff;
+	border-color: #000;
+	background-color: #000;
+}
+
+/* Hides some web component from displaying either on small, medium or big screen */
+.forOtherScreen {}
+.smallScreen {}
+
+/* END OF RESUABLE CLASSES FOR STYLING */
