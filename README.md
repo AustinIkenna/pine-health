@@ -7,7 +7,7 @@ I was marvelled at the level of detailedness by the excellent designers and deve
 
 While developing a replica of the website i had the challenge of keeping up with the never ending changes on the website, i had to take a screenshot of the website so i could at least arrive at a DONE state.
 
-## Languages
+## Technologies
 * HTML5
 * CSS3
 * JQUERY
