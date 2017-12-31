@@ -40,35 +40,17 @@ $(function(){
 
 
 // Mobile menu displays when menu icon is clicked
-var navButton = document.querySelector(".nav-button");
-
-navButton.addEventListener("click", function (e) {
-  e.preventDefault();
-
-  // toggle nav state
-  document.body.classList.toggle("nav-visible");
-});
-
-
-
-//Hide some links whenever the nav icon is clicked
 $(function(){
 
-// Ensures that Phone no and Login link is displayed on medium size screen whenever screen is resized
-  $(window).on('resize', function(e) {
-    /* Act on the event */
-    var widthSize = $(window).width();
+  var navButton = $('.nav-button')
 
-    if (widthSize >= 768) {
-      $("#logIn").show();
-      $(".hideOnClick").show();
-    }   
-  });
-// Hide other links aside from login when nav icon is clicked
-  $('.nav-button').on('click', function(e) {
+  navButton.on('click', function(e) {
     e.preventDefault();
-    /* Act on the event */
-    $(".hideOnClick").toggle();
+    // toggle nav state
+    $('body').toggleClass('nav-visible')
   });
-});
+}); 
+
+
+
 

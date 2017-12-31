@@ -548,12 +548,12 @@ header {
 .nav-wrapper { /*.. Mobile menu body ..*/
     background-color: #fff;
     height: 100%;
-    padding-top: 0.5em;
+    padding-top: 3.5em;
     -webkit-perspective: 1000px;
             perspective: 1000px;
     position: fixed;
     right: 0;
-    top: 10%; 
+    top: 0; 
     visibility: hidden;
     width: 100%;
     z-index: 500; 
