@@ -1,6 +1,12 @@
+/*
+.largestScreen - (min-width: 1280px)
+.bigScreen - (min-width: 1024px) and (max-width: 1279px)
+.mediumScreen - (min-width: 768px) and (max-width: 1023px)
+.smallScreen - (min-width: 0) and (max-width: 767px)
+*/
 
-
-@media only screen and (min-width: 1280px) { /* Big screen styling */
+/* largestScreen styling */
+@media only screen and (min-width: 1280px) { 
 
 /*Hidden contents*/
 #mobileHeader,
@@ -13,7 +19,8 @@
 .thirdFooter nav {
     text-align: right;
 }
-.socialIcons { /* Social media icons styling*/
+/* Social media icons styling*/
+.socialIcons { 
     padding: 0 25px;
     float: left;
     margin-bottom: 1.5%;
@@ -23,7 +30,7 @@
 
 
 
-@media only screen and (min-width: 1024px) and (max-width: 1279px) { /* Medium-Big screen styling */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) { /* bigScreen styling */
  
 /*Hidden contents*/ 
 #mobileHeader,
@@ -130,8 +137,8 @@
 
 
 
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) { /* Medium screen styling..*/
+/* mediumScreen styling..*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) { 
 
 /*Hidden contents*/ 
 #homeHeader,
@@ -277,10 +284,69 @@ input {
 }/* END of @media only screen and (min-width: 768px) and (max-width: 1023px) */
 
 
+/* More of Page content resposiveness styling */
+@media only screen and (min-width: 914px) and (max-width: 1050px) { 
+/* home banner and button responsiveness */
+.getQuoteButton {
+    top: 62%;
+    font-size: 100%; 
+    height: 2.8em;
+    width: 8em;
+}
+.homeBanner h2 {
+    top: 12%;
+    font-size: 280%; 
+    width: 42%;
+}
+.homeBanner h6 {
+    top: 33%;
+    font-size: 145%; 
+    font-weight: lighter;
+    width: 40%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 913px) {
+/* home banner and button responsiveness */
+.getQuoteButton {
+    top: 61%;
+    font-size: 95%; 
+    height: 2.8em;
+    width: 8em;
+}
+.homeBanner h2 {
+    top: 12%;
+    font-size: 220%; 
+    width: 40%;
+}
+.homeBanner h6 {
+    top: 30%;
+    font-size: 120%; 
+    font-weight: lighter;
+    width: 41%;
+}
+}
 @media only screen and (min-width: 601px) and (max-width: 767px) { 
 
 #pageContent  {
     padding: 4% 0 2% 0;
+}
+/* home banner and button responsiveness */
+.getQuoteButton {
+    top: 69%;
+    font-size: 90%; 
+    height: 2.4em;
+    width: 8.5em;
+}
+.homeBanner h2 {
+    top: 18%;
+    font-size: 200%; 
+    width: 45%;
+    line-height: 1em;
+}
+.homeBanner h6 {
+    top: 40%;
+    font-size: 98%; 
+    width: 40%;
 }
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) { 
@@ -288,30 +354,103 @@ input {
 #pageContent  {
     padding: 7% 0 2% 0;
 }
+/* home banner and button responsiveness */
+.getQuoteButton {
+    top: 66%;
+    font-size: 80%; 
+    height: 2.4em;
+    width: 8.5em;
 }
-
+.homeBanner h2 {
+    top: 12%;
+    font-size: 172%; 
+    width: 47%;
+    line-height: 1em;
+}
+.homeBanner h6 {
+    top: 35%;
+    font-size: 85%; 
+    width: 40%;
+}
+}
 @media only screen and (min-width: 401px) and (max-width: 500px) { 
 
 #pageContent  {
     padding: 10% 0 2% 0;
 }
+/* home banner and button responsiveness */
+.getQuoteButton {
+    top: 72%;
+    font-size: 71%; 
+    height: 2.2em;
+    width: 8em;
 }
-
+.homeBanner h2 {
+    top: 15%;
+    font-size: 134%; 
+    width: 47%;
+    line-height: 1em;
+}
+.homeBanner h6 {
+    top: 35%;
+    font-size: 78%; 
+    width: 47%;
+    word-spacing: 0.1em;
+}
+}
 @media only screen and (min-width: 370px) and (max-width: 400px) { 
 
 #pageContent  {
     padding: 14% 0 2% 0;
 }
+/* home banner and button responsiveness */
+.getQuoteButton {
+    top: 70%;
+    font-size: 71%; 
+    height: 2.2em;
+    width: 8em;
 }
-
+.homeBanner h2 {
+    top: 10%;
+    font-size: 127%; 
+    width: 47%;
+    line-height: 1em;
+}
+.homeBanner h6 {
+    top: 32%;
+    font-size: 72%; 
+    width: 47%;
+    word-spacing: 0.1em;
+}
+}
 @media only screen and (min-width: 0) and (max-width: 369px) { 
 
 #pageContent  {
     padding: 17% 0 2% 0;
 }
+/* home banner and button responsiveness */
+.getQuoteButton {
+    top: 71%;
+    font-size: 70%; 
+    height: 2.2em;
+    width: 8em;
 }
+.homeBanner h2 {
+    top: 7%;
+    font-size: 117%; 
+    width: 48%;
+    line-height: 1em;
+}
+.homeBanner h6 {
+    top: 30%;
+    font-size: 68%; 
+    width: 50%;
+    word-spacing: 0.1em;
+}
+}/* End */
 
-@media only screen and (min-width: 0) and (max-width: 767px) { /* Small screen styling */
+/* smallScreen styling */
+@media only screen and (min-width: 0) and (max-width: 767px) { 
 
 /*Hidden contents*/ 
 #homeHeader,
@@ -462,9 +601,9 @@ input {
     float: none;
     margin: 2% 0;
 }/* End of thirdFooter styling*/
+} /* END of @media only screen and (min-width: 0) and (max-width: 767px)*/
 
-
-/* Arrow/send button small screen styling */
+/* Subcription area... send button for small screen styling */
 @media only screen and (min-width: 0) and (max-width: 363px) {
 .subscribeBox img {
     float: none;
@@ -472,12 +611,10 @@ input {
 }
 }
 
-} /* END of @media only screen and (min-width: 0) and (max-width: 767px)*/
 
 
 
 /* Mobile Menu ... styling for 0 -- 768px -- 1023px */
-
 @media only screen and (min-width: 0) and (max-width: 1023px) { 
 
 *, *:before, *:after {

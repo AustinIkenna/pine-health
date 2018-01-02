@@ -70,6 +70,20 @@ button  {
 }
 
 /* BUTTON STYLING */
+/* Homepage banner button styling */
+.getQuoteButton {
+	position: absolute;
+	top: 62%;
+	font-size: 110%; 
+	margin-left: 7%;
+	height: 3em;
+	width: 9em;
+	border-color: rgb(224, 224, 224);
+}
+.getQuoteButton:hover {
+    border: 0.1em solid #1a237e;
+}
+/* Individual and business header button styling*/
 .getQuoteButton1,
 .getQuoteButton2  { 
 	top: 22%;
@@ -77,14 +91,6 @@ button  {
 	font-size: 80%; 
 	color: #1a237e;
 	width: 10em;
-}
-.aboveFooterButton1,
-.aboveFooterButton2 { 
-	font-size: 85%; 
-	height: 2.8em;
-	color: #1a237e;
-	width: 10em;
-	margin: 2.5% 0.5% 0 0.5%;
 }
 .getQuoteButton1:hover {
     color: #1a237e;
@@ -96,12 +102,22 @@ button  {
     border: 0.1em solid #000;
     background-color: #fff;
 }
+/* Above page button styling*/
+.aboveFooterButton1,
+.aboveFooterButton2 { 
+	font-size: 85%; 
+	height: 2.8em;
+	color: #1a237e;
+	width: 10em;
+	margin: 2.5% 0.5% 0 0.5%;
+}
 .aboveFooterButton1:hover,
 .aboveFooterButton2:hover { 
 	color: #1a237e; 
 	border: 0.1em solid #1a237e;
 	background-color: #fff;
 }
+/* Subcribe area styling*/
 input {
 	font-size: medium;
 	border: none;
@@ -230,9 +246,27 @@ a:hover {
 #pageContent nav {
 	text-align: right;
 }
-#pageContent img {
+.homeBanner {
 	position: relative;
+	display: inline-block;
 	border-radius: 0.1em;
+}
+.homeBanner h2,
+.homeBanner h6 {
+	color: #ffffff;
+	position: absolute;
+	margin-left: 7%;
+}
+.homeBanner h2 {
+	top: 11%;
+	font-size: 280%; 
+	width: 40%;
+}
+.homeBanner h6 {
+	top: 31%;
+	font-size: 155%; 
+    font-weight: lighter;
+	width: 40%;
 }
 #pageContent .aa {
 	margin-top: 2%;
